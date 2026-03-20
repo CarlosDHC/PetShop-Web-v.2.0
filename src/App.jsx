@@ -1,30 +1,30 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import Home from './pages/Home';
-import Agendar from './pages/Agendar';
-import Consultar from './pages/Consultar';
-import './index.css';
+import Home from './pages/Home/Home'; // Caminho atualizado
+import Agendar from './pages/Agendamento/Agendar'; // Caminho atualizado
+import Consultar from './pages/Consulta/Consulta'; // Caminho atualizado
+import './styles/global.css'; // Importação do novo CSS global
+
 
 function App() {
   return (
     <BrowserRouter>
-      {/* Esta div mantém a imagem de fundo desfocada em todas as páginas */}
-      <div className="background-image"></div>
-      
-      {/* A Navbar fica fora do Routes para aparecer sempre no topo */}
-      <Navbar />
-      
-      {/* O Routes é a área dinâmica onde as páginas são trocadas */}
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/agendar" element={<Agendar />} />
-        <Route path="/consulta" element={<Consultar />} />
-        {/* Futuramente, adicionaremos as rotas /atualizar e /cancelar aqui */}
-      </Routes>
+      <div className="app-container">
+        <div className="background-image"></div>
+        <Navbar />
+        
+        {/* Main garante que o conteúdo não fique escondido sob a navbar fixa */}
+        <main style={{ minHeight: '80vh', paddingTop: '80px' }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/agendar" element={<Agendar />} />
+            <Route path="/consulta" element={<Consultar />} />
+          </Routes>
+        </main>
 
-      {/* O Footer também fica de fora para aparecer sempre na base */}
-      <Footer />
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }
