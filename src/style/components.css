@@ -1,0 +1,41 @@
+/* Navbar */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--bg-dark);
+    padding: 10px 5%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-icon {
+    width: 80px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+nav ul li a:hover {
+    color: var(--main-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--bg-dark);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+}

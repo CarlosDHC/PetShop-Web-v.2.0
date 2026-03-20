@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Agendar.module.css';
 
 export default function Agendar() {
   const [formData, setFormData] = useState({

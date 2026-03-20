@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './Consulta.module.css';
 
 export default function Consultar() {
   const [numID, setNumID] = useState('');
