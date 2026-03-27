@@ -1,9 +1,9 @@
 import { useRef, useEffect, useContext } from "react";
-import classes from "./FormularioLogin.module.scss"; // Renomeado de LoginForm
-import iconeUsuario from "../../assets/akar-icons_person.svg";
+import classes from "./LoginForm.module.css"; // Renomeado de LoginForm
+/*import iconeUsuario from "../../assets/akar-icons_person.svg";
 import iconeSenha from "../../assets/carbon_password.svg";
 import ContextoUsuarioValido from "../../authCheck"; // Renomeado de ValidUserContext
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";*/
 
 let ehInicial = true;
 

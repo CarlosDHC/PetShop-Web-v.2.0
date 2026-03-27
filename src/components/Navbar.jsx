@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import styles from './navbar.module.css'; // Importação como objeto
+import styles from './Navbar.module.css'; // Importação como objeto
 
 export default function Navbar() {
   return (
