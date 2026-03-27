@@ -1,0 +1,41 @@
+.header1 {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.about {
+    padding: 40px 10%;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+/* Design Profissional: Inverte a ordem em seções alternadas */
+.about:nth-child(even) .row {
+    flex-direction: row-reverse;
+}
+
+.about .image img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.about .btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 30px;
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    color: var(--black);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.about .btn:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}

@@ -1,0 +1,14 @@
+.footer {
+    background-color: var(--bg-purple);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: auto; /* Garante que o footer empurre se houver pouco conteúdo */
+}
+
+.footerText {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}

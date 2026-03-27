@@ -1,19 +1,17 @@
 import { Link } from 'react-router-dom';
-import './Navbar.module.css';
+import styles from './navbar.module.css'; // Importação como objeto
 
 export default function Navbar() {
   return (
-    <nav>
-      <div className="navbar-content">
-        <Link to="/">
-          <img src="/Imagem/icone.png" alt="PetShop Logo" className="navbar-icon" />
-        </Link>
-        <ul>
-          <li><Link to="/">Início</Link></li>
-          <li><Link to="/agendar">Agendar</Link></li>
-          <li><Link to="/consulta">Consultar</Link></li>
+    <nav className={styles.nav}>
+        <img src="/Imagem/icone.png" alt="logo" className={styles.navbarIcon} />
+        <ul className={styles.navList}>
+            <li><Link to="/" className={styles.navLink}>Início</Link></li>
+            <li><Link to="/agendar" className={styles.navLink}>Agendar</Link></li>
+            <li><Link to="/consulta" className={styles.navLink}>Consulta</Link></li>
+            <li><Link to="/login" className={styles.navLink}>Login</Link></li>
+            <li><Link to="/perfil" className={styles.navLink}>Perfil</Link></li>
         </ul>
-      </div>
     </nav>
   );
 }
